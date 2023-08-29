@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+header {
+    padding: 15px;
+    border: 2px solid black;
+    margin: 5px auto;
+}
+
+header > img {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin: 20px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+main {
+    overflow: auto;
+    /* height: 100vh; */
+    max-width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    column-gap: 10px;
+}
+
+article {
+    flex: 1;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+article > img {
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+}
+
+.ad-banner {
+    background-color: rgb(241, 191, 100);
+    padding: 20px;
+}
+
+.ad-banner > h1 {
+    font-size: 22px;
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+.ad-banner > * {
+    margin-bottom: 12px;
+}
+
+.ad-banner > a {
+    color: black;
+    border: 1px solid black;
+    padding: 5px;
+    text-decoration: none;
+}
+.ad-banner > a:hover{
+    border: 2px solid black;
+}
+
+
+.stone-section, .category-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.gem-stone-container, .categories-container{
+    display: flex;
+    column-gap: 10px;
+    margin-top: 12px;
+}
+.gem-stone, .category {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    border: 1px solid black; 
+}
+
+.category > img, .gem-stone > img{
+    width: 100%;
+    height: 300px;
+}
+button {
+    /* display: block; */
+    position: absolute;
+    bottom: 10px;
+    left: 35%;
+    padding: 20px;
+    background-color: transparent;
+}
+button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fix;
+    height: 100px;
+    background-color: black;
+    color: white;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+}
+
+footer div {
+    flex: 1;
+}
+
+.img-div > img {
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    padding: 8px;
+    margin-left: 30px;
+}
+
+.copyright-div > p {
+    font-size: 20px;
+}
